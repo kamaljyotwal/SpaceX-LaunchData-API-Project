@@ -1,0 +1,51 @@
+.Appouterdiv {
+  background-color: #ececec;
+  width: 100%;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  padding: 1rem 0;
+}
+.divWrappingComponents {
+  display: flex;
+  flex-wrap: wrap;
+}
+.datadiv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+  flex-grow: 2;
+  flex-shrink: 2;
+  min-height: 100vh;
+  background: white;
+  margin: 1rem 1rem;
+  min-width: 600px;
+  flex-basis: 73%;
+}
+.card {
+  border: 1px solid #cacaca;
+  /* min-height: 280px; */
+  font-family: sans-serif;
+  width: 20%;
+  margin: 10px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.card img {
+  display: block;
+  background-color: rgb(236, 236, 236);
+  margin: 10px auto;
+  width: 60%;
+  height: auto;
+}
+.carddata {
+  padding: 0.5rem 0.5rem 0.5rem;
+}
+.cardtitle {
+  color: rgb(99, 99, 99);
+  font-weight: lighter;
+  font-size: 1.1rem;
+  padding-left: 0.5rem;
+}
