@@ -3,7 +3,7 @@ import React from "react";
 export default function Datadiv(props) {
   return (
     <div className="card">
-      <img src={props.src} alt="" />
+      <img src={props.src} loading="lazy" alt="" />
       <p className="cardtitle">{props.name} </p>
 
       <div className="carddata">
