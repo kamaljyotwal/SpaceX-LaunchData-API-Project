@@ -8,7 +8,9 @@ function App() {
       <div className="divWrappingComponents">
         <Appdata />
       </div>
+      <h4>Developed By: KAMAL JYOTWAL</h4>
     </div>
+    
   );
 }
 export default App;

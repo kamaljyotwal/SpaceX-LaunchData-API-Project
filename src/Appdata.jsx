@@ -68,20 +68,104 @@ export default class Appdata extends Component {
             >
               2006
             </button>
-            <button>2007</button>
-            <button>2008</button>
-            <button>2009</button>
-            <button>2010</button>
-            <button>2011</button>
-            <button>2012</button>
-            <button>2013</button>
-            <button>2014</button>
-            <button>2015</button>
-            <button>2016</button>
-            <button>2017</button>
-            <button>2018</button>
-            <button>2019</button>
-            <button>2020</button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2007")
+              }
+            >
+              2007
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2008")
+              }
+            >
+              2008
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2009")
+              }
+            >
+              2009
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2010")
+              }
+            >
+              2010
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2011")
+              }
+            >
+              2011
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2012")
+              }
+            >
+              2012
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2013")
+              }
+            >
+              2013
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2014")
+              }
+            >
+              2014
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2015")
+              }
+            >
+              2015
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2016")
+              }
+            >
+              2016
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2017")
+              }
+            >
+              2017
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2018")
+              }
+            >
+              2018
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2019")
+              }
+            >
+              2019
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc("https://api.spaceXdata.com/v3/launches?limit=100&launch_year=2020")
+              }
+            >
+              2020
+            </button>
           </div>
 
           <p className="buttonTitle">Succesful Launch</p>
@@ -93,8 +177,24 @@ export default class Appdata extends Component {
           <p className="buttonTitle">Succesful Landing</p>
           <hr className="titlehr" />
           <div className="buttonContainer">
-            <button>True</button>
-            <button>False</button>
+            <button
+              onClick={() =>
+                this.fetchfunc(
+                  "https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true&land_success=true"
+                )
+              }
+            >
+              Succesful
+            </button>
+            <button
+              onClick={() =>
+                this.fetchfunc(
+                  "https://api.spaceXdata.com/v3/launches?limit=100&land_success=false"
+                )
+              }
+            >
+              Unsuccesful
+            </button>
           </div>
         </div>
         <div className="datadiv">{mappedComponentData}</div>
